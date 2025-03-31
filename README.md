@@ -31,26 +31,17 @@ Pretty Proposals allows designers, developers, and freelancers to streamline the
 
 1.  **Download:** Download the plugin zip file or clone the repository.
 2.  **Upload:** Upload the `pretty-proposals` folder (ensure the folder name is correct) to your WordPress site's `/wp-content/plugins/` directory.
-3.  **FPDF Dependency:**
-    *   This plugin requires the **FPDF** PHP library for PDF generation.
-    *   Download the latest version (zip file) from the official website: [fpdf.org](http://www.fpdf.org/)
-    *   Create a directory named `lib` inside the `pretty-proposals` plugin folder (i.e., `wp-content/plugins/pretty-proposals/lib/`).
-    *   Extract the downloaded FPDF zip file.
-    *   Copy the `fpdf.php` file and the `font` directory into the newly created `pretty-proposals/lib/` directory.
-4.  **Activate:** Activate the "Pretty Proposals" plugin through the 'Plugins' menu in your WordPress admin area.
-5.  **Usage:**
+3.  **Activate:** Activate the "Pretty Proposals" plugin through the 'Plugins' menu in your WordPress admin area.
+4.  **Usage:**
     *   A new "Proposals" menu item will appear in your admin sidebar.
     *   Go to "Proposals" -> "Add New" to create your first proposal.
     *   Fill in the details, including the client information and scope of work.
     *   Save the proposal.
     *   Use the "Send Proposal to Client" button in the sidebar meta box to generate the PDF and email it.
-6.  **Configure (Optional):**
+5.  **Configure (Optional):**
     *   Go to "Proposals" -> "Settings" to customize the "From" Name, Email address, Email Body template, and upload a Company Logo for PDFs.
 
 ## Frequently Asked Questions (FAQ)
-
-*   **Is the FPDF library included?**
-    No, due to licensing considerations and to ensure you use the latest version, you need to download FPDF separately from [fpdf.org](http://www.fpdf.org/) and place `fpdf.php` and the `font` directory inside the `pretty-proposals/lib/` folder.
 
 *   **How can I further customize the PDF layout?**
     Currently, the PDF layout is primarily defined within the `ppr_generate_proposal_pdf` function in the main `pretty-proposals.php` file. Adding a logo is supported via Settings. More advanced customization (fonts, complex layouts) requires editing this PHP function. Future versions might explore template files.
